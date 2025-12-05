@@ -17,19 +17,19 @@ Replace `your-vercel-url.vercel.app` with your deployment URL and `your-github-u
 
 *   **Stats Card**
     ```
-https://github-stats-three-delta.vercel.app//api/stats?username=your-github-username
+https://github-stats-15b6.vercel.app/api/stats?username=your-github-username
     ```
 *   **Top Languages**
     ```
-    https://github-stats-three-delta.vercel.app//api/langs?username=your-github-username
+    https://github-stats-15b6.vercel.app/api/langs?username=your-github-username
     ```
 *   **Contribution Grid**
     ```
-    https://github-stats-three-delta.vercel.app//api/contrib?username=your-github-username
+    https://github-stats-15b6.vercel.app/api/contrib?username=your-github-username
     ```
 *   **Contribution Snake**
     ```
-    https://github-stats-three-delta.vercel.app//api/snake?username=your-github-username
+    https://github-stats-15b6.vercel.app/api/snake?username=your-github-username
     ```
 
 ### Query Parameters
