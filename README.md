@@ -2,16 +2,14 @@
 
 A simple and customizable API to generate SVG cards for your GitHub statistics, ready to be deployed on Vercel.
 
-![Stats Card](https://your-vercel-url.vercel.app/api/stats?username=your-github-username)
-![Languages Card](https://your-vercel-url.vercel.app/api/langs?username=your-github-username)
 
 ## Features
 
 *   **Stats Card**: Shows followers, public repos, total stars, and company.
-*   **Top Languages Card**: Displays a user's most used languages.
+*   **Top Languages Card**: Displays a user's most used languages (without percentages).
 *   **Contribution Grid**: A visual grid of your contributions over the last year.
 *   **Animated Snake**: A fun animation that traces your contribution history.
-*   **Customizable Themes**: Comes with `dark`, `light`, and `simple` themes.
+*   **Customizable Themes**: Comes with `dark`, `light`, `simple`, `neon`, `ocean`, and `sunset` themes.
 
 ## API Endpoints
 
@@ -19,25 +17,25 @@ Replace `your-vercel-url.vercel.app` with your deployment URL and `your-github-u
 
 *   **Stats Card**
     ```
-    https://your-vercel-url.vercel.app/api/stats?username=your-github-username
+https://github-stats-three-delta.vercel.app//api/stats?username=your-github-username
     ```
 *   **Top Languages**
     ```
-    https://your-vercel-url.vercel.app/api/langs?username=your-github-username
+    https://github-stats-three-delta.vercel.app//api/langs?username=your-github-username
     ```
 *   **Contribution Grid**
     ```
-    https://your-vercel-url.vercel.app/api/contrib?username=your-github-username
+    https://github-stats-three-delta.vercel.app//api/contrib?username=your-github-username
     ```
 *   **Contribution Snake**
     ```
-    https://your-vercel-url.vercel.app/api/snake?username=your-github-username
+    https://github-stats-three-delta.vercel.app//api/snake?username=your-github-username
     ```
 
 ### Query Parameters
 
 *   `username` (required): The GitHub username to fetch stats for.
-*   `theme`: The theme for the card. Options are `dark`, `light`, `simple`. Defaults to `dark`.
+*   `theme`: The theme for the card. Options are `dark`, `light`, `simple`, `neon`, `ocean`, `sunset`. Defaults to `dark`.
 
 ## Project Structure
 

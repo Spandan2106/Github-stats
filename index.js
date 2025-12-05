@@ -11,7 +11,10 @@ const DEFAULT_THEME = 'dark';
 const THEMES = {
   dark: { bg: '#0d1117', fg: '#c9d1d9', accent: '#58a6ff', muted: '#8b949e' },
   light: { bg: '#ffffff', fg: '#24292f', accent: '#0366d6', muted: '#6a737d' },
-  simple: { bg: '#f6f8fa', fg: '#24292f', accent: '#2ea44f', muted: '#6a737d' }
+  simple: { bg: '#f6f8fa', fg: '#24292f', accent: '#2ea44f', muted: '#6a737d' },
+  neon: { bg: '#0a0a0a', fg: '#ffffff', accent: '#00ff41', muted: '#00ff41' },
+  ocean: { bg: '#001122', fg: '#a8dadc', accent: '#1e90ff', muted: '#4682b4' },
+  sunset: { bg: '#2c1810', fg: '#ffecd1', accent: '#ff6b35', muted: '#f7931e' }
 };
 
 function themeOf(name) {
@@ -61,12 +64,10 @@ app.get('/api/langs', async (req, res) => {
     const width = 520, height = 160;
 
     // build bars
-    const total = langs.reduce((s, l) => s + l.bytes, 0) || 1;
     let x = 24, y = 30;
     let bars = '';
     langs.slice(0,6).forEach((l, i) => {
-      const pct = Math.round((l.bytes/total)*100);
-      bars += `<text x="${x}" y="${y}" font-size="12" fill="${theme.fg}">${i+1}. ${l.name} — ${pct}%</text>`;
+      bars += `<text x="${x}" y="${y}" font-size="12" fill="${theme.fg}">${i+1}. ${l.name}</text>`;
       y += 22;
     });
 
